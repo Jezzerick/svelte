@@ -12,7 +12,7 @@
 
 {#if isOpen}
     {#each navs as nav}
-        <a href="{nav.link}" class="mt-4 block lg:mt-0 text-teal-lighter hover:text-white mr-10">
+        <a href="{nav.link}" class="mt-4 block lg:mt-0 text-white hover:text-gray-400 mr-10">
             {nav.caption}
         </a>
     {/each}

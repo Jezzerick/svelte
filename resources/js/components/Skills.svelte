@@ -1,11 +1,13 @@
 <script>
 
     let skills = [
-        {name: 'PHP', progress: '70'},
+        {name: 'PHP / LARAVEL', progress: '70'},
         {name: 'HTML', progress: '80'},
         {name: 'CSS', progress: '70'},
+        {name: 'TAILWIND CSS', progress: '60'},
+        {name: 'BOOTSTRAP', progress: '60'},
         {name: 'SVELTE', progress: '60'},
-        {name: 'VUE', progress: '50'},
+        {name: 'VUE', progress: '40'},
         {name: 'MySQL', progress: '60'},
         {name: 'Javascript', progress: '60'},
         {name: 'PHOTOSHOP', progress: '60'},
@@ -13,9 +15,9 @@
 
 </script>
 
-<div class="text-center p-4">
-    <h1 class="text-2xl font-bold uppercase">Abilities</h1>
-</div>
+
+<h1 class="text-left px-10 py-4 text-3xl font-bold uppercase">Abilities</h1>
+
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-10">
     {#each skills as skill}
         <div class="relative pt-1">

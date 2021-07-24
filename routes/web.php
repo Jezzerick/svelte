@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+//creating controller - app-http-controllers
+Route::get('/lambo', [SubPagesController::class, 'getLambo']);
+// Route::get('/lambo', 'SubPagesController@getLambo');
+Route::get('/finance', 'SubPagesController@getFinance');
+Route::get('/cookie', 'SubPagesController@getCookie');
