@@ -1,7 +1,7 @@
 
+<section class="bg-gray-100">
 
-      <div class="section-grey">
-        <div class="container">
+    <div class="container">
 			<div class="columns is-mobile is-centered">
 				<div class="column is-four-fifths">
           <h3 class="title has-text-centered section-title">Virtual World 3D</h3>
@@ -10,15 +10,16 @@
             An animation is also created to show the realism of the car.
           </p>
 
-              <video controls preload="none"
-                <source src="/images/animation.mp4" type="video/mp4">
-              </video>
+          <video controls preload="none"
+            <source src="/images/animation.mp4" type="video/mp4">
+          </video>
 
-              <figure class="image project-image">
-                <img src="/images/lambo.png"></img>
-              </figure>
+          <picture class="image project-image">
+            <img src="/images/lambo.png" loading="lazy"></img>
+          </picture>
 
-            </div>
-          </div>
-      	</div>
+        </div>
+      </div>
     </div>
+
+</section>

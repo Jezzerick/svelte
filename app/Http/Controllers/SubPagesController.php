@@ -14,7 +14,5 @@ class SubPagesController extends Controller
         return view ('finance');
     }
 
-    public function getCookie() {
-        return view ('cookie');
-    }
+
 }

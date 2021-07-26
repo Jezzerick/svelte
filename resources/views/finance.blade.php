@@ -1,6 +1,4 @@
 
-@extends('secondary')
-@section('content')
       <div class="section-grey">
         <div class="container is-fullhd">
           <div class="columns is-mobile is-centered">
@@ -22,4 +20,3 @@
           </div>
       	</div>
     </div>
-@endsection

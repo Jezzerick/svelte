@@ -1,6 +1,7 @@
 <script>
     let works = [
         { images: "/images/lambothumbnail.png", title: "3D Virtual World", link: "/lambo"},
+        { images: "/images/lambothumbnail.png", title: "3D Virtual World", link: "/lambo"},
         { images: "/images/financethumbnail.png", title: "Finance Calculator", link: "/finance"},
         { images: "", title: "", link: ""},
         { images: "", title: "", link: ""}

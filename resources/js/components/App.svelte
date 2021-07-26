@@ -29,17 +29,17 @@
 <Header/>
 
 <Profile/>
+    <div class="container mx-auto">
+        <DownloadCV/>
 
-<!-- <DownloadCV/> -->
-
-<Skills/>
-
-<Work/>
-
-<SendMessage/>
-
-<BackToTop />
-
+        <Skills/>
+        
+        <Work/>
+        
+        <SendMessage/>
+        
+        <BackToTop />
+    </div>
 <Footer/>
 
 

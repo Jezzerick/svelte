@@ -5591,18 +5591,22 @@ function create_fragment(ctx) {
 	let t1;
 	let profile;
 	let t2;
-	let skills;
+	let div;
+	let downloadcv;
 	let t3;
-	let work;
+	let skills;
 	let t4;
-	let sendmessage;
+	let work;
 	let t5;
-	let backtotop;
+	let sendmessage;
 	let t6;
+	let backtotop;
+	let t7;
 	let footer;
 	let current;
 	header = new _Header_svelte__WEBPACK_IMPORTED_MODULE_1__.default({});
 	profile = new _Profile_svelte__WEBPACK_IMPORTED_MODULE_2__.default({});
+	downloadcv = new _DownloadCV_svelte__WEBPACK_IMPORTED_MODULE_8__.default({});
 	skills = new _Skills_svelte__WEBPACK_IMPORTED_MODULE_3__.default({});
 	work = new _Work_svelte__WEBPACK_IMPORTED_MODULE_4__.default({});
 	sendmessage = new _Sendmessage_svelte__WEBPACK_IMPORTED_MODULE_7__.default({});
@@ -5625,14 +5629,17 @@ function create_fragment(ctx) {
 			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(profile.$$.fragment);
 			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(skills.$$.fragment);
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(downloadcv.$$.fragment);
 			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(work.$$.fragment);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(skills.$$.fragment);
 			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(sendmessage.$$.fragment);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(work.$$.fragment);
 			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(backtotop.$$.fragment);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(sendmessage.$$.fragment);
 			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(backtotop.$$.fragment);
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(footer.$$.fragment);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(link0, "rel", "preconnect");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(link0, "href", "https://fonts.googleapis.com");
@@ -5654,6 +5661,7 @@ function create_fragment(ctx) {
 			if (script.src !== (script_src_value = "https://kit.fontawesome.com/2828f7885a.js")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(script, "src", script_src_value);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(script, "integrity", "sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(script, "crossorigin", "anonymous");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "container mx-auto");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(document.head, link0);
@@ -5670,14 +5678,17 @@ function create_fragment(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(profile, target, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t2, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(skills, target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t3, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(work, target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t4, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(sendmessage, target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t5, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(backtotop, target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t6, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(downloadcv, div, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(skills, div, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(work, div, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(sendmessage, div, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(backtotop, div, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t7, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(footer, target, anchor);
 			current = true;
 		},
@@ -5686,6 +5697,7 @@ function create_fragment(ctx) {
 			if (current) return;
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(header.$$.fragment, local);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(profile.$$.fragment, local);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(downloadcv.$$.fragment, local);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(skills.$$.fragment, local);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(work.$$.fragment, local);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(sendmessage.$$.fragment, local);
@@ -5696,6 +5708,7 @@ function create_fragment(ctx) {
 		o(local) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(header.$$.fragment, local);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(profile.$$.fragment, local);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(downloadcv.$$.fragment, local);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(skills.$$.fragment, local);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(work.$$.fragment, local);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(sendmessage.$$.fragment, local);
@@ -5718,14 +5731,13 @@ function create_fragment(ctx) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(profile, detaching);
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(skills, detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(work, detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(sendmessage, detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(backtotop, detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t6);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(downloadcv);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(skills);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(work);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(sendmessage);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(backtotop);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t7);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(footer, detaching);
 		}
 	};
@@ -5856,35 +5868,26 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function create_fragment(ctx) {
-	let div0;
-	let t1;
-	let div1;
+	let div;
 
 	return {
 		c() {
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0.innerHTML = `<h1 class="title has-text-centered section-title">View My Resume</h1>`;
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 
-			div1.innerHTML = `<h2 class="subtitle">Find out what I&#39;ve accomplished over the years</h2> 
-    <form action="mycv.pdf"><button class="button">Download Resume <i class="fad fa-download fa-lg"></i></button></form>`;
+			div.innerHTML = `<h1 class="text-xl font-bold py-2">View My Resume</h1> 
+  <h2 class="subtitle py-2">Find out what I&#39;ve accomplished over the years</h2> 
+  <form action="mycv.pdf"><button class="py-4 px-2 rounded bg-purple-400 hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50">Download Resume <i class="fad fa-download fa-lg"></i></button></form>`;
 
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "column is-12 about-me");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "column is-10 has-text-centered is-offset-1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "container mx-auto bg-gray-100 text-center py-2");
 		},
 		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
 		},
 		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
 		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
 		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
 		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div0);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
 		}
 	};
 }
@@ -6384,27 +6387,28 @@ __webpack_require__.r(__webpack_exports__);
 function create_fragment(ctx) {
 	let div0;
 	let t0;
-	let section;
+	let div5;
 
 	return {
 		c() {
 			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div0.innerHTML = `<img src="/images/profile.png" class="object-contain md:object-scale-down pt-20 md:pt-0" alt="hero"/>`;
 			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			section = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("section");
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 
-			section.innerHTML = `<div class="grid grid-cols-1 sm:grid-cols-2 gap-4"><div class=""><p class="text-xl mb-4">I&#39;m a web developer focusing on the core web fundamentals - HTML, CSS and JS. 
-                I&#39;m experienced in frontend frameworks like Vue and Svelte.</p> 
-            <p class="text-xl">I use CSS frameworks like TailwindCSS, Bootstrap or Bulma to speed up styling of my projects.
-                I&#39;m a hardworking person and seeking to apply my skills and knowledge with my efforts.</p></div> 
-        <div class=""><img class="mx-auto rounded" src="/images/photo.png" alt="Coding"/></div></div>`;
+			div5.innerHTML = `<section class=" aboutMe px-10 pt-6"><div class="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4"><div class=""><p class="text-xl mb-4">I&#39;m a web developer focusing on the core web fundamentals - HTML, CSS and JS. 
+                    I&#39;m experienced in frontend frameworks like Vue and Svelte.</p> 
+                <p class="text-xl">I use CSS frameworks like TailwindCSS, Bootstrap or Bulma to speed up styling of my projects.
+                    I&#39;m a hardworking person and seeking to apply my skills and knowledge with my efforts.</p></div> 
+            <div class=""><img class="mx-auto rounded" src="/images/photo.png" alt="Coding"/></div></div> 
+        <div class="border-b-2 border-gray-400 opacity-30"></div></section>`;
 
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(section, "class", "aboutMe px-10 pt-6");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "container mx-auto pb-4");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t0, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, section, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
 		},
 		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
 		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
@@ -6412,7 +6416,7 @@ function create_fragment(ctx) {
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div0);
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t0);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(section);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
 		}
 	};
 }
@@ -6944,7 +6948,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (15:8) {#each works as work}
+// (16:8) {#each works as work}
 function create_each_block(ctx) {
 	let div1;
 	let figure;
@@ -7076,6 +7080,11 @@ function create_fragment(ctx) {
 
 function instance($$self) {
 	let works = [
+		{
+			images: "/images/lambothumbnail.png",
+			title: "3D Virtual World",
+			link: "/lambo"
+		},
 		{
 			images: "/images/lambothumbnail.png",
 			title: "3D Virtual World",
