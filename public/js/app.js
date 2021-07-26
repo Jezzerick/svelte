@@ -5876,7 +5876,7 @@ function create_fragment(ctx) {
 
 			div.innerHTML = `<h1 class="text-xl font-bold py-2">View My Resume</h1> 
   <h2 class="subtitle py-2">Find out what I&#39;ve accomplished over the years</h2> 
-  <form action="mycv.pdf"><button class="py-4 px-2 rounded bg-purple-400 hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50">Download Resume <i class="fad fa-download fa-lg"></i></button></form>`;
+  <form action="mycv.pdf"><button class="text-white py-4 px-2 rounded bg-purple-400 hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50">Download Resume <i class="fad fa-download fa-lg"></i></button></form>`;
 
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "container mx-auto bg-gray-100 text-center py-2");
 		},
@@ -6396,9 +6396,9 @@ function create_fragment(ctx) {
 			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 
-			div5.innerHTML = `<section class=" aboutMe px-10 pt-6"><div class="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4"><div class=""><p class="text-xl mb-4">I&#39;m a web developer focusing on the core web fundamentals - HTML, CSS and JS. 
-                    I&#39;m experienced in frontend frameworks like Vue and Svelte.</p> 
-                <p class="text-xl">I use CSS frameworks like TailwindCSS, Bootstrap or Bulma to speed up styling of my projects.
+			div5.innerHTML = `<section class=" aboutMe px-10 pt-6"><div class="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4"><div class=""><p class="text-xl mb-4 text-gray-600">I&#39;m a web developer focusing on the core web fundamentals - HTML, CSS and JS. 
+                    I&#39;m experienced in frontend frameworks like Vue and Svelte. I&#39;m also experience in Backend language such as PHP</p> 
+                <p class="text-xl text-gray-600">I use CSS frameworks like TailwindCSS, Bootstrap or Bulma to speed up styling of my projects.
                     I&#39;m a hardworking person and seeking to apply my skills and knowledge with my efforts.</p></div> 
             <div class=""><img class="mx-auto rounded" src="/images/photo.png" alt="Coding"/></div></div> 
         <div class="border-b-2 border-gray-400 opacity-30"></div></section>`;
