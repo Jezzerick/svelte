@@ -9,11 +9,16 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var _components_App_svelte__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/App.svelte */ "./resources/js/components/App.svelte");
 
 var app = new _components_App_svelte__WEBPACK_IMPORTED_MODULE_0__.default({
   target: document.querySelector("#svelte-app")
 });
+window.app = app;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (app);
 
 /***/ }),
 
@@ -6569,7 +6574,8 @@ function create_fragment(ctx) {
 			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 
 			div4.innerHTML = `<h2 class="text-xl font-bold">Let&#39;s Talk</h2> 
-            <hr/>`;
+            <hr/> 
+            <a href="https://uk.linkedin.com/in/jerick-lontoc-14a054165"><i class="fab fa-linkedin fa-2x"></i></a>`;
 
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(label0, "class", "block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(label0, "for", "email");

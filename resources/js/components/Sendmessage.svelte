@@ -72,6 +72,7 @@
         <div>
             <h2 class="text-xl font-bold">Let's Talk </h2>
             <hr>
+            <a href="https://uk.linkedin.com/in/jerick-lontoc-14a054165"><i class="fab fa-linkedin fa-2x"></i></a>
         </div>
     </div>
 
